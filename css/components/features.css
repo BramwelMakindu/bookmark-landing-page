@@ -1,0 +1,235 @@
+
+.features__details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.features__details h2{
+    font-size: 28px;
+    margin-bottom: 1rem;
+    color: var(--dark-blue);
+}
+
+.features__details p{
+    font-size: 16px;
+    color: var(--grayish-blue);
+    margin-bottom: 1rem;
+}
+
+.features__navigation{
+    margin-bottom: 4rem;
+}
+
+.features__navigation ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+.features__navigation ul li{
+    padding: 20px 0;
+    border-top: 1px solid var(--grayish-blue);
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: var(--grayish-blue);
+    cursor: pointer;
+    position: relative;
+}
+
+.features__navigation ul li:last-child{
+    border-bottom: 1px solid var(--grayish-blue);
+}
+
+.features__navigation ul li::after{
+    content: '';
+    width: 150px;
+    height: 3px;
+    background: var(--soft-red);
+    border-radius: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.features__navigation ul li.active{
+    color: var(--dark-blue);
+}
+
+.features__navigation ul li.active::after{
+    display: block;
+}
+
+.features-tab{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    display: none;
+}
+
+.features-tab.live{
+   display: flex;
+}
+
+.features__image{
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.features-img{
+    width: 100%;
+    height: 80%;
+    z-index: 1;
+}
+
+.features-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.features-bg{
+    position: absolute;
+    width: 100%;
+    height: 240px;
+    bottom: 0;
+    left: -20%;
+    border-bottom-right-radius: 6rem;
+    z-index: -1;
+    background: var(--soft-blue);
+}
+
+.features__bottom-details{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features__bottom-details h2{
+    font-size: 28px;
+    margin-bottom: 1rem;
+    color: var(--dark-blue);
+}
+
+.features__bottom-details p{
+    font-size: 16px;
+    color: var(--grayish-blue);
+    margin-bottom: 1rem;
+}
+
+.features-btn{
+    padding: 10px 15px;
+    border: 1px solid transparent;
+    background-color: var(--soft-blue);
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    box-shadow: 2px 4px 8px rgba(0,0,0,.3);
+    cursor: pointer;
+    font-weight: 500;
+    display: none;
+}
+
+
+/* medium */
+@media (min-width: 768px) {
+    .features-top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features__details{
+        width: 550px;
+    }
+
+    .features__details h2{
+        font-size: 40px;
+    }
+
+    .features__details p{
+        font-size: 18px;
+    }
+
+    .features__navigation{
+        border-bottom: 1px solid var(--grayish-blue);
+        width: 600px;
+    }
+
+    .features__navigation ul{
+        flex-direction: unset;
+    }
+
+    .features__navigation ul li{
+        border: none;
+    }
+
+    .features__navigation ul li:hover{
+        color: var(--soft-red);
+    }
+
+    .features__navigation ul li:last-child{
+        border-bottom: none;
+    }
+
+    .features__navigation ul li::after{
+        width: 200px;
+        bottom: 0;
+        left: 0;
+        transform: unset;
+        display: none;
+    }
+
+    .features__bottom{
+        height: 70vh;
+    }
+
+    .features-tab{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .features__image{
+        width: 50%;
+        height: 100%;
+    }
+
+    .features-img{
+        height: 85%;
+    }
+
+    .features-bg{
+        height: 75%;
+        border-bottom-right-radius: 10rem;
+    }
+
+    .features__bottom-details{
+        width: 45%;
+        margin-top: unset;
+        align-items: start;
+        text-align: unset;
+    }
+
+    .features__bottom-details h2{
+        font-size: 30px;
+    }
+
+    .features__bottom-details p{
+        font-size: 18px;
+    }
+
+    .features-btn{
+        display: block;
+    }
+}
+

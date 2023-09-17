@@ -1,0 +1,129 @@
+.faq__header{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq__header h2{
+    font-size: 28px;
+    margin-bottom: 1rem;
+    color: var(--dark-blue);
+}
+
+.faq__header p{
+    font-size: 16px;
+    color: var(--grayish-blue);
+    margin-bottom: 1rem;
+}
+
+.faq-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq-container{
+    padding: 10px 0;
+    width: 100%;
+    border-top: 1px solid var(--grayish-blue);
+    margin-bottom: 0.5rem;
+}
+
+.faq-container:nth-child(4){
+    border-bottom:  1px solid var(--grayish-blue);
+}
+
+.faq-question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    color: var(--dark-blue);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.faq-question p{
+    transition: color .3s;
+}
+
+.faq-question i{
+    font-size: 20px;
+    transition: transform .3s;
+}
+
+.faq-answer-container{
+    height: 0;
+    overflow: hidden;
+    transition: height .3s;
+}
+
+.faq-answer{
+    padding: 10px 0;
+}
+.faq-answer p{
+    color: var(--dark-blue);
+}
+
+.faq-container:hover .faq-question p{
+    color: var(--soft-red);
+}
+
+.faq-container.active .faq-question i{
+    color: var(--soft-red);
+    transform: rotate(180deg);
+}
+
+.faq-container.active .faq-answer-container{
+    height: 150px;
+}
+
+.faq-btn{
+    padding: 10px 25px;
+    border: 1px solid var(--soft-blue);
+    background-color: var(--soft-blue);
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    box-shadow: 2px 4px 8px rgba(0,0,0,.3);
+    margin-top: 2rem;
+    transition: background-color .3s;
+    cursor: pointer;
+}
+
+.faq-btn:hover{
+    background-color: transparent;
+    color: var(--soft-blue);
+}
+
+/* medium */
+@media (min-width: 768px) {
+    .faq{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .faq__header {
+        max-width: 600px;
+    }
+
+    .faq__header h2{
+        font-size: 40px;
+    }
+
+    .faq__header p{
+        font-size: 18px;
+    }
+
+    .faq-bottom{
+        max-width: 600px;
+    }
+
+    .faq-question p{
+        font-size: 18px;
+    }
+}

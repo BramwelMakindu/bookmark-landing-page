@@ -1,0 +1,129 @@
+.cta{
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--soft-blue);
+}
+
+.cta__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cta__container p{
+    color: white;
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+}
+
+.cta__container h2{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.cta-input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.cta-input-div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.cta-input{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: var(--grayish-blue);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.error-msg{
+    color: white;
+    font-size: 14px;
+    transform: skew(-15deg);
+    padding: 4px;
+    display: none;
+}
+
+.error-icon{
+    position: absolute;
+    right: 13px;
+    top: 12px;
+    display: none;
+}
+
+.error-icon i{
+    font-size: 23px;
+    color: var(--soft-red);
+}
+
+.cta-input-div.active{
+    background-color: var(--soft-red);
+}
+
+.cta-input-div.active .error-msg{
+    display: block;
+}
+
+.cta-input-div.active .error-icon{
+    display: block;
+}
+
+.cta-btn{
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: var(--soft-red);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 2px 4px 8px rgba(0,0,0,.3);
+    cursor: pointer;
+    transition: background-color .3s, letter-spacing .3s;
+}
+
+.cta-btn:hover{
+    background-color: white;
+    color: var(--soft-red);
+    letter-spacing: 3px;
+}
+
+/* medium */
+@media (min-width: 768px) {
+    .cta__container{
+        width: 600px !important;
+    }
+
+    .cta__container h2{
+        font-size: 40px;
+    }
+
+    .cta-input-container{
+        flex-direction: row;
+    }
+
+    .cta-input-div{
+        flex: 1;
+    }
+
+    .cta-btn{
+        height: 45px;
+    }
+}

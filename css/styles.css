@@ -1,0 +1,30 @@
+@import url(../css/components/header.css);
+@import url(../css/components/hero.css);
+@import url(../css/components/features.css);
+@import url(../css/components/download.css);
+@import url(../css/components/faq.css);
+@import url(../css/components/cta.css);
+@import url(../css/components/footer.css);
+@import url(../css/utils.css);
+
+:root{
+    --soft-blue: hsl(231, 69%, 60%);
+    --soft-red: hsl(0, 94%, 66%);
+    --grayish-blue: hsl(229, 8%, 60%);
+    --dark-blue: hsl(229, 31%, 21%);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    line-height: calc(1em + 0.5rem);
+}
+
+
+main, footer{
+    overflow: hidden;
+}
+

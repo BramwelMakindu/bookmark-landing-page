@@ -1,0 +1,125 @@
+.download__header{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.download__header h2{
+    font-size: 28px;
+    margin-bottom: 1rem;
+    color: var(--dark-blue);
+}
+
+.download__header p{
+    font-size: 16px;
+    color: var(--grayish-blue);
+}
+
+.download__bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.download__browser{
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.3);
+    background: url(/images/bg-dots.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 290px;
+}
+
+.download__browser-top{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.browser-img{
+    margin-bottom: 1rem;
+}
+
+.download__browser-top h3{
+    font-size: 24px;
+    color: var(--dark-blue);
+}
+
+.download__browser-top p{
+    font-size: 16px;
+    color: var(--grayish-blue);
+}
+
+.download__browser-bottom{
+    width: 100%;
+    padding: 20px;
+}
+
+.download__btn{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid var(--soft-blue);
+    background-color: var(--soft-blue);
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.3);
+    transition: background-color .3s;
+}
+
+.download__btn:hover{
+    background-color: transparent;
+    color: var(--soft-blue);
+}
+
+/* medium */
+@media (min-width: 768px) {
+    .download{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .download__header{
+        max-width: 600px;
+        margin-bottom: 2rem;
+    }
+
+    .download__header h2{
+        font-size: 40px;
+    }
+
+    .download__header p{
+        font-size: 18px;
+    }
+
+    .download__bottom{
+        flex-direction: row;
+    }
+
+    .download__browser{
+        padding: 0 20px;
+    }
+
+    .download__browser:nth-child(2) {
+        margin-top: 4rem;
+    }
+
+    .download__browser:nth-child(3) {
+        margin-top: 8rem;
+    }
+}

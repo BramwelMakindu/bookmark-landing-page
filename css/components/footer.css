@@ -1,0 +1,130 @@
+.footer{
+    background: var(--dark-blue);
+    padding: 2.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo{
+    display: flex;
+    gap: 0.7rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+.footer-logo i{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--soft-blue);
+    color: white;
+    font-size: 13px;
+}
+
+.footer-logo span{
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: rgb(226, 225, 225);
+}
+
+.footer-links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    list-style: none;
+    text-align: center;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: var(--grayish-blue);
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color .3s;
+}
+
+.footer-links ul li a:hover{
+    color: var(--soft-red);
+}
+
+.footer-socials{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer-socials i{
+    font-size: 30px;
+    color: var(--grayish-blue);
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.footer-socials i:hover{
+    transform: translateY(-5px);
+    color: var(--soft-red);
+}
+
+.attribution {
+    color: var(--grayish-blue); 
+    font-size: 12px; 
+    text-align: center; 
+}
+.attribution a { 
+    text-decoration: none;
+    color: var(--soft-blue); 
+    transition: color .3s;
+}
+
+.attribution a:hover{
+    color: var(--soft-red);
+}
+
+
+@media (min-width: 768px) {
+    .footer-div{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .footer-top{
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .footer-logo{
+        margin: unset;
+    }
+
+    .footer-links ul{
+        flex-direction: row;
+    }
+
+    .attribution{
+        font-size: 18px;
+    }
+}
