@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://bookmark-landing-page-bramwel.netlify.app/]
-- Live Site URL: [https://bramwel-calculator-app.netlify.app/]
+- Solution URL: [https://github.com/BramwelMakindu/bookmark-landing-page]
+- Live Site URL: [https://bookmark-landing-page-bramwel.netlify.app/]
 
 ## My process
 
