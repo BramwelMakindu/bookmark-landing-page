@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/BramwelMakindu/calculator-app]
+- Solution URL: [https://bookmark-landing-page-bramwel.netlify.app/]
 - Live Site URL: [https://bramwel-calculator-app.netlify.app/]
 
 ## My process
